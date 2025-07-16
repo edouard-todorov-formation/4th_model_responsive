@@ -1,0 +1,128 @@
+* {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: white;
+    font-size: 1.5em;
+    margin: 30px;
+
+}
+
+H1 {
+    margin: 70px auto 30px;
+}
+
+header {
+    background-color: #667EEA;
+    padding: 24px;
+    max-width: 1000px;
+    padding: 3%;
+    margin: auto;
+}
+
+.headerContener {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-wrap: wrap;
+}
+
+.logoContener {
+    color: white;
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.navContener {
+    display: flex;
+    justify-content: center;
+}
+
+.menuContener {
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+/* carte responsive */
+
+.carteSection {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carteContainer {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+}
+
+.carte {
+    width: 170px;
+    height: 120px;
+    border-radius: 10px 10px;
+    box-shadow: 10px 10px 10px 10px gray;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* image responsive */
+
+.imageContainer {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px;
+}
+
+/* Colonne flex */
+
+.colonne {
+    box-shadow: 10px 10px 10px 10px;
+    padding: 2em 2em;
+    flex: 1 1 200px;
+}
+
+.colonneFlex {
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer > div {
+    color: white;
+    margin:3em 10em;
+}
