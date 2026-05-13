@@ -3,70 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive</title>
+    <meta name="description" content="Démo de mise en page responsive en HTML et CSS : grille de cartes, image fluide et deux colonnes flexibles avec Flexbox.">
+    <title>Démo responsive</title>
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
-    <header class="headerContener">
-        <div class="logoContener">
+    <header class="headerContainer">
+
+        <!-- Website logo -->
+        <div class="logoContainer">
             Logo
         </div>
-        <nav class="navContenere">
-            <li class="menuContener">
-                <ul>
-                    <a href="">Acceuil</a>
-                </ul>
-                <ul>
-                    <a href="">Exemple</a>
-                </ul>
-                <ul>
-                    <a href="">Contact</a>
-                </ul>
-            </li>
+
+        <!-- NavBar -->
+        <nav class="navContainer">
+            <ul class="menuContainer">
+                <li>
+                    <a href="#cartes">Cartes</a>
+                </li>
+                <li>
+                    <a href="#image">Image</a>
+                </li>
+                <li>
+                    <a href="#colonnes-flexibles">Colonnes</a>
+                </li>
+            </ul>
         </nav>
     </header>
     <main>
-<!-- Carte -->
-        <section>
-            <H1>
+
+        <!-- Main title -->
+        <h1>Démo responsive</h1>
+
+        <!-- Card section -->
+        <section id="cartes">
+            <h2>
                 Cartes responsives
-            </H1>
-            <div class="carteContainer">
-                <div class="carte">Carte 1</div>
-                <div class="carte">Carte 2</div>
-                <div class="carte">Carte 3</div>
-                <div class="carte">Carte 4</div>
+            </h2>
+            <div class="cardContainer">
+                <div class="card">Carte 1</div>
+                <div class="card">Carte 2</div>
+                <div class="card">Carte 3</div>
+                <div class="card">Carte 4</div>
             </div>
         </section>
-<!-- Image -->
-        <section>
-            <H1>
+
+        <!-- Picture section -->
+        <section id="image">
+            <h2>
                 Image responsive
-            </H1>
-            <div>
-                <img  class="imageContainer" src="assets/images/png.png" alt="indication résolution de l'image">
+            </h2>
+            <div class="imageContainer">
+                <img  class="responsiveImage" src="assets/images/png.png" alt="Image de démonstration responsive affichant un bloc 600 par 300 pixels">
             </div>
         </section>
-        <section class="colonneContainer">
-            <H1>
+        <section id="colonnes-flexibles">
+            <h2>
                 Deux colonnes flexibles
-            </H1>
-            <div class="colonneFlex">
-                <div class="colonne">
-                    Colonne A
+            </h2>
+            <div class="flexColumn">
+                <div class="column">
+                    Column A
                 </div>
-                <div class="colonne">
-                    Colonne B
+                <div class="column">
+                    Column B
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer>
         <div>
-            C 2025 Simple Responsive
+            © 2025 Simple Responsive
         </div>
         <div>
-            Flexbos & Unité seulement
+            Flexbox & Unité seulement
         </div>
     </footer>
 

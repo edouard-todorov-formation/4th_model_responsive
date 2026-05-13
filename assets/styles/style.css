@@ -1,10 +1,16 @@
 * {
     font-family: sans-serif;
     text-decoration: none;
-    color: black;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img {
@@ -12,28 +18,23 @@ img {
     height: auto;
 }
 
-a {
-    color: white;
-    font-size: 1.5em;
-    margin: 30px;
-
+h1{
+    margin: 80px auto;
+    text-align: center;
 }
 
-H1 {
+h2 {
     margin: 80px auto;
     text-align: left;
-    max-width: 1200px;
 }
 
+/* Header */
 header {
     background-color: #667EEA;
-    padding: 24px;
-    max-width: 1200px;
     padding: 3%;
-    margin: auto;
 }
 
-.headerContener {
+.headerContainer {
     display: flex;
     justify-content: space-between;
     padding-left: 10%;
@@ -41,47 +42,51 @@ header {
     flex-wrap: wrap;
 }
 
-.logoContener {
+.logoContainer {
     color: white;
-    display: flex;
     font-size: 40px;
     font-weight: bold;
-    justify-content: center;
 }
 
-.navContener {
+.navContainer {
     display: flex;
     justify-content: center;
 }
 
-.menuContener {
+.menuContainer {
     color: white;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-
+    list-style: none;
 }
 
-
-/* carte responsive */
-
-.carteSection {
-    max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
+.menuContainer a { 
+    color: white;
+    font-size: 1.5em;
+    margin: 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 2px;
 }
 
-.carteContainer {
+.menuContainer a:hover {
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+/* Responsive card */
+
+.cardContainer {
     margin: auto;
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
-    max-width: 900px;
+    max-width: 100%;
 }
 
-.carte {
+.card {
     width: 170px;
     height: 120px;
     border-radius: 10px 10px;
@@ -92,33 +97,30 @@ header {
     align-items: center;
 }
 
-/* image responsive */
+/* Image responsive */
 
 .imageContainer {
-    width: 80vw;
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+}
+
+.responsiveImage {
+    margin: 0 auto;
     border-radius: 20px 20px;
+    width: 95%;
 }
 
-/* Colonne flex */
+/* Flex column */
 
-.colonneContainer {
-    margin: auto;
-    max-width: 1000px; 
-}
-.colonne {
+.column {
     box-shadow: 10px 10px 10px 10px;
     padding: 2em 2em;
     flex: 1 1 200px;
     margin: 2em;
 }
 
-.colonneFlex {
+.flexColumn {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: auto;
 }
@@ -131,11 +133,74 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1200px;
-    margin: auto;
 }
 
 footer > div {
-    color: white;
-    margin:3em 10em;
+    margin:1em 3em;
+}
+
+/* Media queries */
+
+/* Screen size larger than 1600px */
+@media (min-width: 1600px) {
+    body {
+        max-width: 1800px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Header en colonne */
+    .headerContainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Menu en colonne */
+    .menuContainer {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    a {
+        font-size: 1.2em;
+        margin: 10px;
+    }
+
+    /* Titres plus adaptés */
+    h1 {
+        font-size: 1.6em;
+        margin: 40px auto;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    /* Cards centrées */
+    .cardContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Colonnes en colonne */
+    .flexColumn {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    /* Footer centré */
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
 }
